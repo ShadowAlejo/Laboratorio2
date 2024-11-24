@@ -1,7 +1,7 @@
 <?php
 
-use App\Http\Livewire\AlquileresIndex;
 use Illuminate\Support\Facades\Route;
+use App\Http\Livewire\AlquileresIndex;
 use App\Http\Livewire\Peliculas;
 use App\Http\Livewire\ActorPeliculaComponent;
 use App\Http\Livewire\Socios;
@@ -20,6 +20,8 @@ Route::get('/actor-pelicula', ActorPeliculaComponent::class)->name('actor-pelicu
 Route::get('/socios', Socios::class)->name('socios');
 Route::get('/generos', Generos::class)->name('generos');
 Route::get('/sexos', Sexos::class)->name('sexos');
+Route::get('/formatos', Formatos::class)->name('formatos');
+Route::get('/directores', Directores::class)->name('directores');
 
 
 Route::middleware([
